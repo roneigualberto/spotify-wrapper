@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>27 - Set </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+</body>
+
+<script>
+   let mySet = new Set(['willian','jonas','goday']);
+
+   mySet.add('marcio');
+   mySet.add('marcio');
+   mySet.add('marcio');
+   mySet.add('willian');
+
+   mySet.delete('willian');
+
+   console.log(mySet.has('willian'));
+   console.log(mySet.has('marcio'));
+
+   let it = mySet.values();
+
+   for(name of it) {
+       console.log(name);
+   }
+
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>07 - Array.from</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <ul id="list">
+        <li>Ronei</li>
+        <li>Macedo</li>
+        <li>Gualberto</li>
+    </ul>
+
+</body>
+
+<script>
+    const text = 'Ronei';
+    console.log(Array.from(text));
+
+
+    const list = document.querySelectorAll('#list li');
+    const listArray = Array.from(list);
+
+    console.log(listArray);
+
+    const names = listArray.map((name) => name.textContent);
+
+    console.log(names);
+
+
+</script>
+
+</html>

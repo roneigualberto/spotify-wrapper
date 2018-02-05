@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>17 - Promises</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+
+
+</body>
+
+<script>
+
+    let defer = new Promise((resolve, reject) => {
+
+        setTimeout(() => {
+            if (true) {
+                resolve('Hello It works');
+            } else {
+                reject('Error!');
+            }
+        }, 2000);
+    });
+
+    defer
+        .then((data) => {
+            console.log(data);
+            return { mensagem: data };
+        })
+        .then((data) => console.log(data))
+        .catch((error) => console.log(error));
+
+</script>
+
+</html>

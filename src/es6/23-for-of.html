@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>23 - for..of </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+</body>
+
+<script>
+  let txt = 'Ireland';
+  let it = txt[Symbol.iterator()]();
+
+  for(letter of txt) {
+      console.log(letter);
+  }
+</script>
+
+</html>

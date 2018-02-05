@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>11 - Destructuring Objects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+
+
+</body>
+
+<script>
+    var data =  {
+        name: 'William',
+        surname: 'Justen',
+        age: 26,
+        blog: 'https://williamjusten.com.br',
+        social: {
+            'twitter': '@William_Justen',
+            'facebook': '/williamjusten'
+        }
+    };
+
+    const { name, surname} = data;
+
+    console.log(name);
+    console.log(surname);
+
+    const {  facebook, twitter }  = data.social;
+
+    console.log(facebook);
+
+    console.log(twitter);
+
+    const {facebook: fb} = data.social;
+
+    console.log(fb);
+
+    const { city = 'Dublin'} = data;
+
+    console.log(city);
+    console.log(name);
+
+
+
+
+
+</script>
+
+</html>

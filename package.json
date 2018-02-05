@@ -1,7 +1,7 @@
 {
-  "name": "js-tdd-course",
+  "name": "spotify-wrapper",
   "version": "1.0.0",
-  "description": "Nossa biblioteca do curso de JS com TDD na prática",
+  "description": "A wrapper to work with the Spotify Web API",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/roneigualberto/js-tdd-course.git"
+    "url": "git+https://github.com/roneigualberto/spotify-wrapper.git"
   },
   "keywords": [
     "js",
